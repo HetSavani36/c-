@@ -16,37 +16,28 @@ int main(){
     int i,j,s,n;
     cout<<"enter odd no. of lines: ";
     cin>>n;
-
-    for(i=1;i<=n/2+1;i++){
-        for(s=1;s<=n/2+1-i;s++){
+    for(i=1;i<=2*n-1;i++){
+        if(i<=n){
+        for(s=1;s<=n-i;s++){
             cout<<" ";
         }
-        for(j=1;j<=i;j++){
+        for(j=1;j<=2*i-1;j++){
             cout<<"*";
-        }
-        for(j=i-1;j>=1;j--){
-            cout<<"*";
-        }
-        for(s=1;s<=n/2+1-i;s++){
-            cout<<" ";
         }
         cout<<endl;
-    }
+        }
 
-    for(i=n/2;i>=1;i--){
-        for(s=1;s<=n/2-i+1;s++){
+        if(i>n){
+        for(s=1;s<=i-1;s++){
             cout<<" ";
         }
-        for(j=1;j<=i;j++){
+        for(j=2*n-1;j>=1;j--){
             cout<<"*";
-        }
-        for(j=i-1;j>=1;j--){
-            cout<<"*";
-        }
-        for(s=1;s<=n/2-i;s++){
-            cout<<" ";
         }
         cout<<endl;
+        
+        }
     }
+
     return 0;
 }
