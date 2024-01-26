@@ -23,6 +23,7 @@ int main(){
         }
         if(flag==false) break;
     }
+
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
