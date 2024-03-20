@@ -12,7 +12,7 @@ public:
 };
 
 class LinkedList{
-public:
+public: 
     Node* head;
     Node* tail;
     int size;
