@@ -39,5 +39,5 @@ int main(){
         }
         minc++;
     }
-    return 0;
+     return 0;
 }

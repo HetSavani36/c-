@@ -1,0 +1,24 @@
+// tree is non linear data structure
+/*
+    ->it has multiple nexts
+    ->heirachical data structure
+    ->next are known as childrens
+    ->leaf node: with no child
+    ->root node:the main node it child are known as child node
+    ->size=no of nodes
+    ->edges :- is = to size-1.
+    ->height :- is = to level -1
+
+
+-->important properties of trees
+    ->traversing done by depthfirst search breadth first search(DFS BFS)
+    ->it has no loops and no circuits
+    ->it has no self loop
+-->types of trees lec-1:time 16:00
+
+-->binary trees: upto two child nodes
+-->balanced binary trees: for every node ,the difference between th levels of lst and 
+    rst should be atmost 1.
+
+    -->degenerate binary trees: 0 or 1 child
+*/

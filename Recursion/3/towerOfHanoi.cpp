@@ -2,15 +2,15 @@
 #include<string>
 using namespace std;
 
-void toh(int n,char s,char h,char d){
-    if(n==0) return;
-    toh(n-1,s,d,h);
-    cout<<s<<" -> "<<d<<endl;
-    toh(n-1,h,s,d);  
+void toh(int a,int b,int c,string s){
+    
+    toh(a,c,b,);
+    toh(b,a,c);
 }
 
 int main(){
+    int a[]={1,2,7,4,5};
     int n=5;
-    toh(n,'A','B','C');
+    toh();
     return 0;
 }

@@ -14,11 +14,24 @@ void pushAtBottom(stack<int>& st,int x){
         temp.pop();
     }
 }
+void pushBottomRec(stack<int>& st,int val){
+        if(st.size()==0){
+            st.push(val);
+            return;
+        }
+        int x=st.top();
+        st.pop();
+        pushBottomRec(st,val);
+        st.push(x);
+}
+
 void display(stack<int>& st){
     stack<int> temp;
     while(st.size()>0){
         cout<<st.top()<<" ";
+        int x=st.top();
         st.pop();
+        temp.push(x);
     }
 }
 
@@ -31,6 +44,8 @@ int main(){
     st.push(50);
 
     pushAtBottom(st,0);
+    //display(st);
+    pushBottomRec(st,-10);
     display(st);
     return 0;
 }

@@ -12,7 +12,6 @@ void subset(int a[],int n,int idx,vector<int> v){
         cout<<endl;
         return;
     }
-
     subset(a,n,idx+1,v);
     v.push_back(a[idx]);
     subset(a,n,idx+1,v);

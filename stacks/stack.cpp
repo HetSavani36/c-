@@ -16,17 +16,17 @@ int main(){
     cout<<st.size()<<endl;
     cout<<st.top();
     cout<<endl;
-    while(st.top()!=NULL){
+    while(st.size()>0){
         cout<<st.top()<<" ";
         int x=st.top();
         st.pop();
         temp.push(x);
     }
-    cout<<temp.size();
+    cout<<endl<<temp.size()<<endl;
     while(temp.size()>0){
         cout<<temp.top()<<" ";
-        //temp.push(st.top());
+        int x=temp.top();
         temp.pop();
-    }
-    
+        st.push(x);
+    } 
 }
